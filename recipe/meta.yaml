@@ -17,20 +17,19 @@ source:
   sha256: ed4d5bfddf7dffbd3eacdc0f084d48b04e7620ee9c36d8699a4776ca1cf4f28b
 
 build:
-  number: 0
-
+  merge_build_host: True  # [win]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
-  skip: True  # [win32]
-
 
 requirements:
   build:
-    - r-base
     - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
+    - r-base
     - unixodbc             # [unix]
 
   run:
