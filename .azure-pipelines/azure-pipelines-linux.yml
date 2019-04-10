@@ -12,7 +12,7 @@ jobs:
     matrix:
       linux_target_platformlinux-64:
         CONFIG: linux_target_platformlinux-64
-        UPLOAD_PACKAGES: True
+        UPLOAD_PACKAGES: False
   steps:
   - script: |
       sudo pip install --upgrade pip
