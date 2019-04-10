@@ -33,6 +33,7 @@ requirements:
     - {{posix}}make
     - {{posix}}coreutils         # [win]
     - {{posix}}zip               # [win]
+    - gcc                        # [linux]
   host:
     - r-base
     - unixodbc                   # [unix]
