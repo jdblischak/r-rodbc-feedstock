@@ -16,6 +16,13 @@ Current build status
 
 
 <table><tr>
+    <td>CircleCI</td>
+    <td>
+      <a href="https://circleci.com/gh/conda-forge/r-rodbc-feedstock">
+        <img alt="Linux" src="https://img.shields.io/circleci/project/github/conda-forge/r-rodbc-feedstock/master.svg?label=Linux">
+      </a>
+    </td>
+  </tr><tr>
     <td>Appveyor</td>
     <td>
       <a href="https://ci.appveyor.com/project/conda-forge/r-rodbc-feedstock/branch/master">
